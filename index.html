@@ -2,411 +2,141 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Rangkuman Digital Marketing - Kelas 11 RPL (Kurikulum Merdeka)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aturan & Ketentuan | World Wave Music Festival</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #f4f7fc;
-            color: #1a2c3e;
+            background: #fff;
+            color: #000;
+            font-family: 'Times New Roman', 'Georgia', 'Serif', serif;
             line-height: 1.5;
             padding: 2rem 1rem;
         }
-
-        /* Container */
         .container {
-            max-width: 1280px;
+            max-width: 900px;
             margin: 0 auto;
-            background: white;
-            border-radius: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: all 0.2s;
         }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #0b2b3b 0%, #1b4f6e 100%);
-            color: white;
-            padding: 2.5rem 2rem;
+        h1, h2, h3 {
+            font-weight: normal;
+            margin: 1.5rem 0 0.75rem;
+        }
+        h1 {
+            font-size: 1.8rem;
             text-align: center;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #000;
+            padding-bottom: 0.5rem;
         }
-
-        .header h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            margin-bottom: 0.5rem;
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.25rem;
         }
-
-        .header .sub {
-            font-size: 1rem;
-            opacity: 0.9;
-            font-weight: 500;
-            border-top: 1px solid rgba(255,255,255,0.3);
-            display: inline-block;
-            padding-top: 0.6rem;
-            margin-top: 0.5rem;
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-style: italic;
         }
-
-        .badge {
-            background: #ffb347;
-            color: #1e2f3a;
-            padding: 0.2rem 1rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        /* Tombol Download */
-        .download-area {
-            text-align: right;
-            padding: 1rem 2rem;
-            background: #ffffff;
-            border-bottom: 1px solid #e2edf2;
-        }
-        .btn-download {
-            background: #1e6f5c;
-            color: white;
-            border: none;
-            padding: 0.7rem 1.8rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .btn-download:hover {
-            background: #0f5243;
-            transform: translateY(-2px);
-        }
-
-        /* konten utama */
-        .content {
-            padding: 2rem 2rem 2.5rem;
-        }
-
-        /* section topic */
-        .topic {
-            margin-bottom: 2.8rem;
-            scroll-margin-top: 1rem;
-        }
-        .topic-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0f3b4f;
-            border-left: 6px solid #2b9c7c;
-            padding-left: 1rem;
-            margin-bottom: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .topic-title i {
-            font-size: 1.8rem;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 0.8rem;
-        }
-        .card {
-            background: #fefefe;
-            border-radius: 1.5rem;
-            padding: 1.4rem 1.2rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
-            border: 1px solid #e6f0f3;
-            transition: all 0.2s;
-        }
-        .card h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #1e5f72;
+        p, li {
             margin-bottom: 0.75rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            text-align: justify;
         }
-        .card p, .card li {
-            font-size: 0.95rem;
-            color: #2c3f4d;
-        }
-        .card ul, .simple-list {
-            padding-left: 1.2rem;
-            margin: 0.7rem 0;
-        }
-        .card li {
-            margin: 0.4rem 0;
+        ul, ol {
+            margin: 0.5rem 0 1rem 2rem;
         }
         .highlight {
-            background: #e7f3ef;
-            padding: 0.2rem 0.4rem;
-            border-radius: 10px;
-            font-weight: 500;
-            color: #1a6b5a;
-        }
-        .tip-box {
-            background: #fef7e0;
-            border-left: 4px solid #f3b33d;
-            padding: 1rem;
-            border-radius: 1rem;
-            margin-top: 1rem;
-        }
-        .visual-example {
-            background: #f0f6fa;
-            border-radius: 1rem;
-            padding: 1rem;
-            margin-top: 1rem;
-            font-family: monospace;
-            font-size: 0.85rem;
+            font-weight: bold;
         }
         hr {
-            margin: 1rem 0;
-            border: 0;
-            height: 1px;
-            background: linear-gradient(to right, #cbdde6, transparent);
+            margin: 1.5rem 0;
+            border: none;
+            border-top: 1px solid #ccc;
         }
-        footer {
-            background: #eef3f7;
+        .footer-note {
+            font-size: 0.85rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+            padding-top: 1rem;
             text-align: center;
-            padding: 1.2rem;
-            font-size: 0.8rem;
-            color: #4a6a7a;
-            border-top: 1px solid #d4e2ea;
-        }
-        @media (max-width: 680px) {
-            .content { padding: 1.5rem; }
-            .topic-title { font-size: 1.5rem; }
-            .header h1 { font-size: 1.6rem; }
         }
     </style>
 </head>
 <body>
-<div class="container" id="materiContainer">
-    <div class="download-area">
-        <button class="btn-download" id="downloadBtn">📥 Download Rangkuman (HTML)</button>
+<div class="container">
+    <h1>Aturan & Ketentuan<br>World Wave Music Festival</h1>
+
+    <h2>Tanggal Penting</h2>
+    <ul>
+        <li><span class="highlight">15 Juni 2026:</span> Pengiriman Video Dibuka</li>
+        <li><span class="highlight">31 Oktober 2026:</span> Batas Akhir Pengiriman</li>
+        <li><span class="highlight">1 November 2026 – 31 Januari 2027:</span> Periode Penjurian</li>
+        <li><span class="highlight">6 Februari 2027:</span> Festival Musik</li>
+        <li><span class="highlight">Pertengahan Februari 2027:</span> Pengumuman di Situs Web</li>
+    </ul>
+
+    <h2>Manfaat</h2>
+    <p>Kompetisi daring kami memberikan kesempatan bagi peserta untuk diakui atas prestasi mereka secara internasional. Kami menyediakan publikasi bagi pemenang luar biasa di media sosial. Pemenang hadiah utama akan diwawancarai. Terima E-Sertifikat.</p>
+
+    <h2>Pedoman</h2>
+    <p>Rekaman dengan kualitas profesional tidaklah wajib. Namun, suara harus terdengar jelas. Untuk kategori komposisi musik, rekaman pertunjukan (baik rekaman pertunjukan langsung, maupun pertunjukan yang disajikan melalui midi yang diunggah di YouTube) akan diterima. Perhatikan bahwa kami tidak menerima berkas apa pun yang memerlukan unduhan. Hanya tautan YouTube yang akan diterima. Dalam video, harap cantumkan dengan jelas apakah video tersebut untuk World Wave Music Festival. Sertakan juga nama pelamar, serta judul repertoar dan genre. HARAP JANGAN memperkenalkan diri Anda dalam video.</p>
+    <p>World Wave Music Festival adalah kompetisi inklusif yang menerima semua instrumen dan genre. Kami menawarkan keragaman instrumen dan genre musik paling luas, dengan tujuan memberikan kesempatan kepada musisi dari semua latar belakang untuk teruji sepenuhnya dan terinspirasi. Kami mengakui bahwa musik adalah bahasa universal yang melampaui semua batasan. Oleh karena itu, kompetisi kami tidak memberlakukan batasan usia. Kami mengundang musisi dari semua tingkat — pelajar, amatir, dan profesional — dari seluruh dunia untuk berpartisipasi. Musisi dari segala usia, memainkan semua instrumen dan tampil dalam genre apa pun, didorong untuk bergabung. Kami menyambut solois, duet, trio, ansambel, paduan suara, orkestra, dan band sekolah. Tidak diperlukan pengalaman sebelumnya. Festival kami mencakup beragam kategori yang dirancang untuk mengakomodasi musisi dari semua tingkat keahlian. Apakah Anda seorang pemula atau pemain mahir, Anda akan menemukan peluang berharga dalam kompetisi, jaringan, dan seterusnya di festival kami. Kami menerima solo, duet, trio, ansambel, paduan suara, orkestra, dan band sekolah.</p>
+
+    <h2>Genre yang Diterima</h2>
+    <p>Klasik, Jazz, Kontemporer, Pop, Tradisional, Etnik</p>
+
+    <h2>Instrumen yang Diterima</h2>
+    <p><strong>Instrumen musik klasik Barat</strong><br>
+    Piano, Vokal (Solo, Paduan Suara)<br>
+    Senar (Biola, Viola, Selo, Kontrabas), Gitar, Kecapi, Mandolin, Ukulele<br>
+    Kayu (Pikolo, Seruling, Klarinet, Obo, Bassoon), Seruling Pan<br>
+    Kuningan (Terompet, Trombon, Tuba, French Horn, Eufonium, Saksofon)<br>
+    Perkusi (mis. gambang kayu, glockenspiel, marimba, drum, timpani)<br>
+    Harpa, Instrumen papan tombol lainnya: Harpsichord, Organ, Akordeon, Harmonika, Theremin<br>
+    Kantor lelaki, Seruling Pan<br>
+    Semua instrumen tradisional dan etnik<br>
+    Instrumen Musik Tradisional / Etnik<br>
+    Instrumen Tradisional Jepang<br>
+    Instrumen Tradisional Cina (mis. Pipa, Erhu, Gu Zheng, Yang Qin (Dulcimer Cina), Suona, dan lain-lain)<br>
+    Khim / Dulcimer<br>
+    Gamelan<br>
+    Opera Cina / Opera Beijing<br>
+    Kantor lelaki<br>
+    ** Jika instrumen Anda tidak tercantum di sini, atau Anda memiliki pertanyaan, silakan kirim surel kepada kami.</p>
+
+    <h2>Persyaratan Video</h2>
+    <p>Harap unggah kiriman Anda sebagai berkas video melalui portal pengiriman kami. Durasi karya: Tidak ada batasan durasi karya. Namun, harus berupa satu karya musik (lengkap dalam satu gerakan) atau satu gerakan dari karya berskala lebih besar (seperti sonata atau konserto). Rekaman dengan kualitas profesional tidaklah wajib. Namun, suara harus terdengar jelas. Untuk kategori komposisi musik, rekaman pertunjukan (baik rekaman pertunjukan langsung, maupun pertunjukan yang disajikan melalui midi yang diunggah di YouTube) akan diterima. Perhatikan bahwa kami tidak menerima berkas apa pun yang memerlukan unduhan. Dalam video, harap cantumkan dengan jelas apakah video tersebut untuk World Wave Music Festival. Sertakan juga nama pelamar, serta judul repertoar dan genre. HARAP JANGAN memperkenalkan diri Anda dalam video.</p>
+
+    <h2>Kategori</h2>
+    <p>Peserta akan dinilai berdasarkan kualitas pertunjukan berdasarkan usia dan pengalaman (lama belajar instrumen mereka). Pelamar akan secara otomatis dikelompokkan berdasarkan usia dan tingkat.</p>
+
+    <h2>Penjurian</h2>
+    <p>Keputusan juri bersifat mutakhir dan tidak dapat diajukan banding. Setiap kandidat yang tidak mematuhi peraturan kompetisi, atau memberikan informasi palsu atau tidak benar akan didiskualifikasi.</p>
+
+    <h2>Syarat dan Ketentuan</h2>
+    <ol>
+        <li>Keputusan juri bersifat final dan tidak dapat diajukan banding.</li>
+        <li>Kompetisi World Wave Music Festival tidak akan menanggapi pertanyaan tentang pelamar lain atau mengenai kiriman mereka.</li>
+        <li>Upaya untuk menghubungi secara pribadi salah satu anggota juri (untuk bentuk konsultasi apa pun, tidak terkecuali pelajaran, kelas master) sangat dilarang dan akan mengakibatkan diskualifikasi.</li>
+        <li>WWMF berhak untuk melakukan perubahan atas peraturan dan ketentuannya.</li>
+        <li>Pemberian hadiah sepenuhnya berada pada kebijaksanaan juri. Juri dapat menahan hadiah jika pertunjukan tidak memenuhi standar.</li>
+        <li>Semua informasi yang diberikan kepada kami dalam aplikasi harus benar. Pemberian informasi yang tidak benar atau tidak akurat akan mengakibatkan diskualifikasi.</li>
+        <li>Pemberian informasi kontak dan alamat surat yang benar adalah tanggung jawab tunggal pelamar. Kompetisi WWMF tidak akan bertanggung jawab atas kegagalan berkomunikasi dengan pelamar atau atas kegagalan pengiriman hadiah karena informasi korespondensi yang tidak benar yang diberikan oleh pelamar.</li>
+        <li>Setiap upaya untuk menyabotase operasi kompetisi kami atau merusak reputasi kompetisi kami, akan mengakibatkan diskualifikasi segera.</li>
+        <li>Dengan mengirimkan aplikasi ke kompetisi kami, peserta secara otomatis setuju untuk sepenuhnya mematuhi semua peraturan dan ketentuan yang ditetapkan oleh Kompetisi WWMF.</li>
+    </ol>
+
+    <h2>Persetujuan Rilis Media dan Penggunaan Konten</h2>
+    <p>Dengan mengirimkan materi Anda ke World Wave Music Festival, Anda mengonfirmasi bahwa Anda adalah pemilik sah dari semua konten yang dikirimkan (termasuk musik, video, dan gambar) atau telah mendapatkan izin yang diperlukan untuk memberikan hak di bawah ini. Anda memberikan kepada World Wave Music Festival, afiliasinya, dan mitranya lisensi non-eksklusif, bebas royalti, di seluruh dunia untuk menggunakan, mereproduksi, menyunting, mendistribusikan, dan menampilkan secara publik konten yang Anda kirimkan untuk tujuan promosi, pemasaran, dan periklanan festival di semua platform media, termasuk namun tidak terbatas pada media sosial, situs web, siaran pers, dan kompilasi video. Persetujuan ini mencakup penggunaan nama, kemiripan, dan rekaman pertunjukan Anda dalam materi promosi. Anda memahami bahwa konten Anda dapat digunakan dalam upaya pemasaran festival saat ini dan masa depan, dan bahwa tidak akan ada kompensasi yang diberikan untuk penggunaan ini.</p>
+
+    <div class="footer-note">
+        © World Wave Music Festival — Semua hak dilindungi undang‑undang.
     </div>
-    <div class="header">
-        <div class="badge">📘 Muatan Lokal Produktif - Digital Marketing</div>
-        <h1>Rangkuman Digital Marketing</h1>
-        <div class="sub">Kelas 11 RPL | Kurikulum Merdeka | SMK Unggulan</div>
-        <div style="margin-top: 16px; font-size: 0.9rem;">✔ Konsep Branding | ✔ Media Promosi Digital | ✔ Presentasi Efektif | ✔ Identitas Visual Konsisten</div>
-    </div>
-
-    <div class="content">
-        <!-- 1. Konsep Branding -->
-        <div class="topic" id="branding">
-            <div class="topic-title">🏷️ 1. Memahami Konsep Branding</div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>📌 Apa itu Branding?</h3>
-                    <p>Branding adalah proses menciptakan <strong>persepsi, citra, dan identitas unik</strong> di benak konsumen terhadap produk, jasa, atau perusahaan. Bukan hanya logo, tapi <span class="highlight">janji & pengalaman</span> yang dibangun secara konsisten.</p>
-                </div>
-                <div class="card">
-                    <h3>🧩 Elemen Branding</h3>
-                    <ul>
-                        <li><strong>Brand Identity</strong> : Nama, logo, warna, tipografi.</li>
-                        <li><strong>Brand Positioning</strong> : Posisi unik di pasar vs kompetitor.</li>
-                        <li><strong>Brand Personality</strong> : Karakter (misal: muda, ramah, mewah).</li>
-                        <li><strong>Brand Voice</strong> : Gaya komunikasi (formal/ santai/ inspiratif).</li>
-                        <li><strong>Brand Equity</strong> : Nilai tambah dari persepsi merek.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>🎯 Manfaat Branding Kuat</h3>
-                    <ul>
-                        <li>Meningkatkan loyalitas & kepercayaan.</li>
-                        <li>Diferensiasi di pasar digital yang padat.</li>
-                        <li>Mendukung harga premium (price premium).</li>
-                        <li>Memudahkan peluncuran produk turunan (brand extension).</li>
-                    </ul>
-                    <div class="tip-box">
-                        💡 <strong>Tips Branding untuk RPL:</strong> Buat brand persona dan value proposition yang jelas sebelum membuat website atau materi promosi.
-                    </div>
-                </div>
-            </div>
-            <div class="visual-example">
-                📝 <strong>Contoh Kasus:</strong> Startup "EduFun" – brand dengan tagline "Belajar Jadi Seru". Warna cerah, maskot burung hantu, tone komunikasi ceria. Konsistensi ini membuat audiens langsung mengenali kontennya di Instagram & web.
-            </div>
-        </div>
-
-        <!-- 2. Membuat Media Promosi Digital -->
-        <div class="topic" id="mediaPromosi">
-            <div class="topic-title">📱 2. Membuat Media Promosi Digital</div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>🖼️ Jenis Media Promosi Digital</h3>
-                    <ul>
-                        <li><strong>Social Media Content</strong> (Instagram feed/reels, TikTok, FB)</li>
-                        <li><strong>Digital Poster/Banner</strong> (Canva, Photoshop, Figma)</li>
-                        <li><strong>Video Pendek</strong> (Storytelling produk, tutorial singkat)</li>
-                        <li><strong>Email Marketing</strong> (newsletter, promo eksklusif)</li>
-                        <li><strong>Landing Page / Microsite</strong> (promo spesifik produk/event)</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>⚙️ Langkah Membuat Media Promosi Digital</h3>
-                    <ul>
-                        <li>1. Tentukan <strong>tujuan promosi</strong> (awareness, engagement, sales).</li>
-                        <li>2. Kenali target audiens (demografi, platform favorit).</li>
-                        <li>3. Desain visual menarik sesuai identitas merek.</li>
-                        <li>4. Tulis copywriting persuasif (CTA jelas).</li>
-                        <li>5. Optimasi ukuran & format (resolusi, .mp4 / .jpg).</li>
-                        <li>6. Uji coba (A/B testing) dan analisis performa.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>🛠️ Tools Digital Marketing (RPL Friendly)</h3>
-                    <ul>
-                        <li><strong>Canva</strong> – desain grafis & video pendek.</li>
-                        <li><strong>CapCut / Adobe Rush</strong> – edit video promosi.</li>
-                        <li><strong>Google My Business</strong> – promosi lokal.</li>
-                        <li><strong>Meta Business Suite</strong> – manage posting & iklan.</li>
-                        <li><strong>Mailchimp</strong> – email marketing dasar.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tip-box">
-                ✨ <strong>Best Practice:</strong> Untuk siswa RPL, coba buat landing page sederhana dengan HTML/CSS/JS sebagai media promosi digital event sekolah. Integrasikan form pendaftaran & desain responsif.
-            </div>
-        </div>
-
-        <!-- 3. Menyusun Presentasi yang Baik -->
-        <div class="topic" id="presentasi">
-            <div class="topic-title">🎤 3. Menyusun Presentasi yang Baik</div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>📐 Struktur Presentasi Efektif</h3>
-                    <ul>
-                        <li><strong>Pembuka</strong> : Hook (pertanyaan/cerita/fakta mengejutkan).</li>
-                        <li><strong>Isi</strong> : 3–5 poin utama, data pendukung, studi kasus.</li>
-                        <li><strong>Penutup</strong> : Kesimpulan + Call to Action (CTA) yang jelas.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>🎨 Desain Slide yang Memikat</h3>
-                    <ul>
-                        <li>Gunakan <span class="highlight">prinsip 10/20/30</span> (10 slide, 20 menit, font minimal 30pt).</li>
-                        <li>Konsisten dengan identitas visual (warna merek, font).</li>
-                        <li>Hindari teks berlebihan; gunakan visual (ikon, grafik, mockup).</li>
-                        <li>Kontras teks & latar belakang yang baik.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>🗣️ Teknik Presentasi Luring/Daring</h3>
-                    <ul>
-                        <li>Kontak mata & bahasa tubuh terbuka.</li>
-                        <li>Latihan penuh (rehearsal) & manajemen waktu.</li>
-                        <li>Gunakan storytelling untuk membuat audiens terhubung.</li>
-                        <li>Untuk presentasi digital: pastikan koneksi stabil & share screen rapi.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="visual-example">
-                🧩 <strong>Contoh Skenario:</strong> Presentasi "Peluncuran Aplikasi Pemesanan Makanan Kampus". Slide 1: masalah antrian panjang → Slide 2: solusi aplikasi + fitur → Slide 3: demo antarmuka (gambar mockup) → Slide 4: strategi promosi digital → Penutup: ajak testing beta.
-            </div>
-        </div>
-
-        <!-- 4. Menerapkan Identitas Visual yang Konsisten pada Produk/Event -->
-        <div class="topic" id="identitasVisual">
-            <div class="topic-title">🎨 4. Menerapkan Identitas Visual yang Konsisten</div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>📦 Komponen Identitas Visual</h3>
-                    <ul>
-                        <li><strong>Logo</strong> (ikon, logotype, varian warna).</li>
-                        <li><strong>Palet Warna Primer & Sekunder</strong> (maksimal 4-5 warna).</li>
-                        <li><strong>Tipografi</strong> : font untuk heading, subheading, body teks.</li>
-                        <li><strong>Gaya visual</strong> : ilustrasi, fotografi, pattern pendukung.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>✅ Konsistensi di Berbagai Media</h3>
-                    <ul>
-                        <li>Sosial media: gunakan template feed yang seragam.</li>
-                        <li>Website/landing page: terapkan style guide yang sama.</li>
-                        <li>Presentasi: gunakan master slide dengan warna brand.</li>
-                        <li>Event: seragamkan backdrop, name tag, pamflet digital.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>📐 Panduan Penerapan (Visual Identity Guide)</h3>
-                    <p>Buat dokumen standar yang mencakup: aturan penggunaan logo (clear space, minimum size), kode warna (HEX/RGB), font stack, tone & mood board. Contoh untuk event "TechFest 2025": warna utama #0D3B66, aksen #F4D58D, font Poppins.</p>
-                </div>
-            </div>
-            <div class="tip-box" style="background:#e0f0fa;">
-                🎯 <strong>Praktik Baik untuk Tugas RPL:</strong> Saat membuat aplikasi atau website portofolio, terapkan style guide konsisten. Untuk event kampus, buat mockup seluruh materi promosi (poster, twibbon, feed IG) menggunakan palet dan logo yang sama.
-            </div>
-            <div class="visual-example">
-                🌟 <strong>Contoh nyata:</strong> Produk minuman "Segar.id" selalu menggunakan gradasi hijau-jingga, logo sulur, dan foto estetik dengan background kayu. Semua konten TikTok, Instagram, dan kemasan mengikuti identitas ini → meningkatkan recall merek.
-            </div>
-        </div>
-
-        <!-- Ringkasan padanan tambahan dengan kisi2 mulok -->
-        <hr>
-        <div style="background: #eef1f5; border-radius: 1.2rem; padding: 1.2rem; margin-top: 1rem;">
-            <h3 style="display: flex; align-items: center; gap: 10px; color:#1f5e6e;">📚 Integrasi dengan Kisi-Kisi Mulok Produktif</h3>
-            <p style="margin-top: 8px;">Materi di atas selaras dengan <strong>4 ketentuan utama</strong>:</p>
-            <ul style="display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin-top: 12px;">
-                <li style="background:#fff; padding: 6px 14px; border-radius: 30px;">✅ Konsep Branding (Merek, positioning, value)</li>
-                <li style="background:#fff; padding: 6px 14px; border-radius: 30px;">✅ Membuat Media Promosi Digital (poster, video, email, landing page)</li>
-                <li style="background:#fff; padding: 6px 14px; border-radius: 30px;">✅ Menyusun Presentasi yang Baik (struktur, desain, teknik)</li>
-                <li style="background:#fff; padding: 6px 14px; border-radius: 30px;">✅ Identitas Visual Konsisten (logo, warna, tipografi, style guide)</li>
-            </ul>
-            <p style="margin-top: 1rem;">Materi ini menjadi fondasi bagi siswa RPL dalam membuat proyek <strong>Digital Marketing Campaign</strong> untuk produk atau event, baik sebagai bagian dari tugas akhir maupun pengembangan portofolio.</p>
-        </div>
-
-        <!-- Daftar Pustaka Singkat & Rekomendasi -->
-        <div style="margin-top: 2rem;">
-            <h4 style="color:#235f6e;">📖 Sumber & Referensi Lanjutan</h4>
-            <p style="font-size: 0.85rem;">Kotler, P., & Keller, K.L. (2016). Marketing Management. 15e. Pearson.<br>
-            Buku Digital Marketing SMK Kurikulum Merdeka (Kemendikbudristek), materi Branding & Media Sosial.<br>
-            Modul Produktif RPL: Implementasi UI/UX & Identitas Visual pada Aplikasi Web.</p>
-        </div>
-    </div>
-    <footer>
-        © Rangkuman Digital Marketing - Kelas 11 RPL | Kurikulum Merdeka | Dapat digunakan sebagai bahan ajar & referensi ujian praktik.
-    </footer>
 </div>
-
-<script>
-    (function() {
-        const downloadBtn = document.getElementById('downloadBtn');
-        if (!downloadBtn) return;
-
-        downloadBtn.addEventListener('click', function() {
-            // Mengambil seluruh elemen HTML dari dokumen saat ini (termasuk gaya dan struktur)
-            const docType = '<!DOCTYPE html>\n';
-            const html = document.documentElement.outerHTML;
-            // Gabungkan dengan docType untuk menghasilkan file html utuh
-            const fullHtml = docType + html;
-            
-            // Membuat Blob dengan tipe text/html
-            const blob = new Blob([fullHtml], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Rangkuman_DigitalMarketing_Kelas11_RPL.html';  // nama file download
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        });
-    })();
-</script>
 </body>
 </html>
